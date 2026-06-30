@@ -1,0 +1,43 @@
+# Event API which will be scraped
+#  - user's activity: https://api.github.com/users/USERNAME/events
+#  - organization's activity: https://api.github.com/orgs/ORG/events
+#  - repo's activity: https://api.github.com/repos/USERNAME/REPO/events
+# e.g. https://api.github.com/repos/valvesoftware/source-sdk-2013/events
+EVENT_API = 'https://api.github.com/repos/valvesoftware/source-sdk-2013/events'
+
+# Wait time between fetches. Might be overriden by GitHub
+POLL_INTERVAL = 300
+
+# GitHub API token (https://github.com/settings/personal-access-tokens)
+GH_TOKEN = ''
+
+# Discord Webhook. Generated in Channel -> Channel settings -> Connections -> Webhooks
+DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/123/456/github'
+
+# Blacklisted repositories, e.g. "source-sdk-2013"
+REPO_BLACKLIST = [ ]
+
+# Blacklisted events, e.g. "WatchEvent"
+#  - CommitCommentEvent -> comment on a commit
+#  - CreateEvent -> branch or tag created
+#  - DeleteEvent -> branch or tag deleted
+#  - DiscussionEvent -> discussion opened/edited/closed
+#  - ForkEvent -> repo forked
+#  - GollumEvent -> wiki page created or updated
+#  - IssueCommentEvent -> comment on an issue or PR
+#  - IssuesEvent -> issue opened/closed/edited/etc.
+#  - MemberEvent -> collaborator added to the repo
+#  - PublicEvent -> repo made public
+#  - PullRequestEvent -> PR opened/closed/merged/reopened/etc.
+#  - PullRequestReviewEvent -> PR review submitted
+#  - PullRequestReviewCommentEvent -> comment on a PR's diff
+#  - PushEvent -> commits pushed to a branch
+#  - ReleaseEvent -> release published
+#  - WatchEvent -> repo starred
+EVENT_BLACKLIST = [ ]
+
+# Whitelisted users, e.g. "lilmayu" (the login username seen in URLs! not the display name)
+USER_WHITELIST = [ ]
+
+# If initial events should be skipped when running this script for the first time. Defaults to true.
+SKIP_INITIAL_EVENTS = true

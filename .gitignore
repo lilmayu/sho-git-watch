@@ -1,0 +1,5 @@
+.venv/
+config.toml
+.idea/
+
+**/__pycache__/**
