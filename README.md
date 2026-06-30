@@ -16,23 +16,25 @@ cd sho-git-watch
 pip install -r requirements.txt
 cp config.example.toml config.toml
 
-echo !!! Edit the config in config.toml !!!
-echo !!! after that, run using 'python -m src'
+nano config.toml
 ```
+
+and then run using `python -m src`
 
 ### when running with venv (unix-like)
 
 ```
 git clone https://github.com/lilmayu/sho-git-watch.git
 cd sho-git-watch
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp config.example.toml config.toml
 
-echo !!! Edit the config in config.toml !!!
-echo !!! after that, run using 'python -m src'
+nano config.toml
 ```
+
+and then run using `python3 -m src`
 
 ### when running with venv (Windows)
 
@@ -44,9 +46,10 @@ python -m venv .venv
 pip install -r requirements.txt
 copy config.example.toml config.toml
 
-echo !!! Edit the config in config.toml !!!
-echo !!! after that, run using 'python -m src'
+notepad.exe config.toml
 ```
+
+and then run using `python -m src`
 
 ## Configuration
 

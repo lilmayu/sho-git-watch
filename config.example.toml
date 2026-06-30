@@ -1,3 +1,5 @@
+# RUNNING: python -m src
+
 # Event API which will be scraped
 #  - user's activity: https://api.github.com/users/USERNAME/events
 #  - organization's activity: https://api.github.com/orgs/ORG/events
