@@ -302,7 +302,7 @@ class Webhook:
                 'PullRequestReviewCommentEvent': 'pull_request_review_comment',
                 'PushEvent': 'push',
                 'ReleaseEvent': 'release',
-                'WatchEvent': 'watch'
+                'WatchEvent': 'watch',
             }
 
             event_type = EVENT_TYPES.get(event['type'], None)

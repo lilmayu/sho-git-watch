@@ -19,7 +19,7 @@ DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/123/456/github'
 # Blacklisted repositories, e.g. "source-sdk-2013"
 REPO_BLACKLIST = [ ]
 
-# Blacklisted events, e.g. "WatchEvent"
+# Blacklisted events, e.g. "watch"
 #  - commit_comment -> comment on a commit
 #  - create -> branch or tag created
 #  - delete -> branch or tag deleted
@@ -36,6 +36,7 @@ REPO_BLACKLIST = [ ]
 #  - push -> commits pushed to a branch
 #  - release -> release published
 #  - watch -> repo starred
+# Multiple values are specified like: ["issues", "watch"]
 EVENT_BLACKLIST = [ ]
 
 # Whitelisted users, e.g. "lilmayu" (the login username seen in URLs! not the display name)
